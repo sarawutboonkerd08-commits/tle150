@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ส่วนตัว - นายสราวุธ บุญเกิด</title>
+    <!-- นำเข้า Google Font (Prompt) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- นำเข้า FontAwesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            height: 120px;
+            position: relative;
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: -60px auto 0;
+            border-radius: 50%;
+            background: #fff;
+            padding: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-body {
+            padding: 20px 30px 30px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            text-align: left;
+        }
+
+        .bio p {
+            margin-bottom: 8px;
+        }
+
+        .bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        .bio p i {
+            color: #667eea;
+            width: 25px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #4facfe;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #4facfe;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .btn-contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-contact:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- ส่วนหัวการ์ด -->
+        <div class="card-header"></div>
+        
+        <!-- รูปโปรไฟล์ -->
+        <div class="profile-img-container">
+            <!-- 📌 [จุดที่ต้องใส่รูป] อยู่ตรงนี้ครับ -->
+            <img src="photo/1.png" alt="นายสราวุธ บุญเกิด" class="profile-img">
+        </div>
+
+        <!-- รายละเอียดโปรไฟล์ -->
+        <div class="profile-body">
+            <h1 class="name">นายสราวุธ บุญเกิด</h1>
+            <p class="title">Developer / Creator</p>
+
+            <div class="bio">
+                <p><i class="fa-solid fa-envelope"></i> sarawut@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 08x-xxx-xxxx</p>
+                <p><i class="fa-solid fa-location-dot"></i> ประเทศไทย</p>
+            </div>
+
+            <!-- ไอคอนโซเชียลมีเดีย -->
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <a href="mailto:sarawut@example.com" class="btn-contact">ติดต่อฉัน</a>
+        </div>
+    </div>
+
+</body>
+</html>
